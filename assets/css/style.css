@@ -63,7 +63,7 @@ body {
   right: 0;
   z-index: 10;
   width: 100%;
-  height: 70px;
+  height: 90px;
     
 }
 
@@ -127,6 +127,7 @@ body {
 
   .content {
     position: relative;
+   
     top: 800px;
     background-color: white;
     
@@ -144,7 +145,9 @@ body {
     text-transform: uppercase;
     font-size: 28px;
     width: 70%;
-    margin: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 500;
   }
 .contenttext {
@@ -255,7 +258,19 @@ body {
   margin: 100px;
 }
 
+.formateursphoto1 {
+  background-color: #cbac6a;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+ }
 
+ .formateursphoto2 {
+  background-color: #cbac6a;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+ }
 .formateurs {
   /* put pictures close to each other in flex */
   display: flex;
@@ -269,17 +284,34 @@ body {
  }
 
  .formateurs img {
-  width: 250px;
-  height: 250px;
-  margin: 10px;
+   width: 300px;
+   height: 300px;
+  
   cursor: pointer;
  }
+
+ .formateurtitre {
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  font-size: 30px;
+}
+
 
  .formateurs img:hover {
   background-color: #cbac6a;
   opacity: 50%;
  }
 
+ .formateursphoto1 img:hover  + .formateurtitre {
+ visibility: visibleπ;
+ }
 
  .blog {
   text-align: center;
@@ -341,3 +373,97 @@ body {
     text-transform: none;
     font-family: "Open sans", sans-serif;
   }
+
+.partenaires {
+  background-color: #212529;
+  width: 100%;
+  height: 350px;
+}
+
+.partenairestitre {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+}
+
+.partenairescontent {
+  color: white;
+  text-align: center;
+  font-family: "Open sans", sans-serif;
+  font-size: 19px;
+}
+
+.voirplus {
+  color: #cbac6a;
+  font-weight: bold;
+  cursor:e-resize;
+}
+
+.partenairesimages {
+  margin-top: 100px;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+/*
+.temoignages {
+  
+  background-image: url('../img/bg_temoignage.jpg');
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  height: auto;
+  padding: 250px;
+  z-index: 0;
+  
+}
+*/
+.temoignagestitre {
+  z-index: 1;
+  padding: 250px;
+}
+
+
+.instagram {
+  margin: auto;
+  width: 100%;
+}
+
+.instagramtitre {
+ text-transform: uppercase; 
+ text-align: center;
+ font-size: 30px;
+}
+
+.instagramphotos {
+  margin-top: 30px;
+  
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+.instagramphotos img {
+  width: 20%;
+}
+
+.instagramphotos img:hover {
+ scale: 1.1;
+}
+
+.footer {
+  background-color: #282828;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  color: white;
+ justify-content: space-around;
+}
+
+.articles {
+  display: flex;
+}
+.articletitre {
+  display: flex;
+  gap: 2px;
+  text-transform: uppercase;
+}
