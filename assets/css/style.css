@@ -474,12 +474,26 @@ body {
 }
 
 .megafooter {
-  height: 150px;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 120px;
   width: 100%;
+  color: white;
+  font-family: "Open sans", sans-serif;
   background-color: #212529;
 }
 
 .articlecontent {
   display: flex;
   font-size: 10px;
+  justify-content: right;
+}
+
+#agence34 {
+  font-weight: bold;
+  font-size: larger;
+  color: #cbac6a;
 }
