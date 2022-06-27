@@ -57,8 +57,14 @@ body {
     z-index: 40;
 }
 .navbar {
-    width: 100%;
-    height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+    
 }
 
 /* texte sur la homepage */
@@ -165,6 +171,7 @@ body {
  }
 
  #triplephotos {
+  margin-top: 50px;
   width: 100%;
   height: 500px;
   display: grid;
@@ -243,3 +250,94 @@ body {
   font-family: 'Open sans', sans-serif;
   
 }
+
+.espaceentredivs {
+  margin: 100px;
+}
+
+
+.formateurs {
+  /* put pictures close to each other in flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 50px;
+ }
+
+ .formateurs img {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  cursor: pointer;
+ }
+
+ .formateurs img:hover {
+  background-color: #cbac6a;
+  opacity: 50%;
+ }
+
+
+ .blog {
+  text-align: center;
+  background-color: #f9f9fa;
+ }
+
+ .blogtitre {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-transform: uppercase;
+ }
+
+ .blogimages {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 50px;
+ }
+
+ .blogimages img{
+  width: auto;
+  height: 200px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+ }
+
+
+
+ 
+
+  .imagestext {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .imagestitre {
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+    text-transform: uppercase;
+    color: #cbac6a;
+    text-align: left;
+  }
+
+  .lirelasuite {
+    font-size: 17px;
+  }
+
+  .imagestextcontent {
+    font-size: 15px;
+    color: black;
+    text-transform: none;
+    font-family: "Open sans", sans-serif;
+  }
